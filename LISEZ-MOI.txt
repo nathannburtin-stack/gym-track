@@ -1,0 +1,20 @@
+GYM TRACK – Application de suivi de musculation
+
+CONTENU
+- index.html : application
+- manifest.webmanifest : configuration d'installation
+- sw.js : cache hors connexion
+- icon-192.png et icon-512.png : icônes
+
+INSTALLATION SUR IPHONE
+Cette version est une application web progressive (PWA). Pour l'installer comme une application :
+1. Héberger le contenu de ce dossier sur un site HTTPS (par exemple GitHub Pages).
+2. Ouvrir l'adresse du site dans Safari sur l'iPhone.
+3. Toucher Partager > Sur l'écran d'accueil > Ajouter.
+4. Lancer GYM TRACK depuis l'écran d'accueil.
+
+DONNÉES
+Les séances sont enregistrées dans le stockage local du navigateur (localStorage). Elles ne sont pas envoyées sur un serveur. Utiliser Paramètres > Exporter régulièrement pour conserver une copie. Une suppression des données du navigateur ou un changement d'appareil peut faire perdre les données locales.
+
+NOTE
+Le service worker et le mode hors connexion fonctionnent après le premier chargement réussi sur une adresse HTTPS. Un simple fichier HTML ouvert depuis Fichiers n'offre pas toutes les fonctions d'installation PWA.
